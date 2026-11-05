@@ -186,4 +186,4 @@ Issue 附样例（记得脱敏）。
 
 ## 许可
 
-[MIT](LICENSE) © zhipucode
+[MIT](LICENSE) © moshuai
