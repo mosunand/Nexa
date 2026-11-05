@@ -1,0 +1,57 @@
+{
+  "name": "nexa",
+  "productName": "Nexa",
+  "version": "1.0.0",
+  "description": "Nexa — 纯本地的 AI Agent 用量监控面板：token/TPS/首字延迟/项目洞察，只读离线。",
+  "main": "out/main/index.js",
+  "author": "zhipucode",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "dist": "electron-vite build && electron-builder --win",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "echarts": "^6.0.0",
+    "fzstd": "^0.1.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.0",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.1.0",
+    "electron": "^39.2.0",
+    "electron-builder": "^26.0.12",
+    "electron-vite": "^4.0.1",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "electron",
+      "electron-winstaller",
+      "esbuild"
+    ]
+  },
+  "keywords": [
+    "ai-agent",
+    "token-usage",
+    "monitor",
+    "electron",
+    "typescript",
+    "dashboard",
+    "zcode",
+    "codex",
+    "claude-code"
+  ]
+}
