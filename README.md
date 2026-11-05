@@ -184,12 +184,6 @@ Issue 附样例（记得脱敏）。
 3. ChatGPT 网页版 / Codex cloud 任务无本地数据，不在覆盖范围。
 4. 仅实测 Windows；代码层的跨平台分支存在但未验证。
 
-## 参与贡献
-
-- 提交前请跑 `pnpm typecheck`（双 tsconfig 零错误）。
-- 新增适配器请附一份**脱敏后的**会话样例与解析口径说明。
-- 数据解析遵循防御式原则：坏行跳过、格式不符降级为空、绝不拖累其他 agent。
-
 ## 许可
 
 [MIT](LICENSE) © zhipucode
